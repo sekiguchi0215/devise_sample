@@ -1,2 +1,4 @@
-<h1>Items#new</h1>
-<p>Find me in app/views/items/new.html.erb</p>
+<% form_with model: @item, locale: true do |f| %>
+  <p><%= f.label :name, "商品名" %> <%= f.text_field :name %></p>
+  <p><%= f.label :price, "値段" %> <%= f.text_field :price %></p>
+<% end %>
